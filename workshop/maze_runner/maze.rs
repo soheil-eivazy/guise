@@ -1,4 +1,4 @@
-use wasm_bindgen::prelude::*;
+ use wasm_bindgen::prelude::*;
 use crate::maths::graph::{Node, GraphSearchMethod, SearchResult, BreadthFirst, Graph, GraphSearch};
 use super::{plane::generate_graph, generator::division};
 
