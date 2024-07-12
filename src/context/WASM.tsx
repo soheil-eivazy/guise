@@ -16,8 +16,8 @@ export const WASMContextProvider: React.FC<WASMContextProviderProps> = ({
   // That's why it must be limited to a single mount run
   useMountEffectOnce(() => {
     (async() => {
-      const wasm = await import("sketches");
-      // const memory = await import("sketches/sketches_bg.wasm");
+      const wasm = await import("@/workshop/sketches");
+      // const memory = await import("@/workshop/sketches_bg.wasm");
       // const p5 = await import('react-p5');
       await wasm.default();
       setState({ wasm });
@@ -32,8 +32,8 @@ export const WASMContextProvider: React.FC<WASMContextProviderProps> = ({
 }
 
 interface IWASMContext {
-  wasm?: typeof import('sketches')
-  // memory?: typeof import('sketches/sketches_bg.wasm')
+  wasm?: typeof import("@/workshop/sketches")
+  // memory?: typeof import('@/workshop/sketches_bg.wasm')
   // p5?: typeof import('react-p5')
 }
 

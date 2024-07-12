@@ -2,12 +2,16 @@ version: '3.9'
 
 services:
   guise:
-    container_name: o3rd_persona
+    container_name: guise
     build:
-      context: ./persona
       dockerfile: Dockerfile
     restart: always
     env_file:
       - .env
     ports:
       - 3000:3000
+    volumes:
+      - guise_node:node_modules
+
+volumes:
+  guise_node:

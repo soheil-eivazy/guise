@@ -1,4 +1,4 @@
-use crate::maths::graph::{Graph, Node};
+use crate::maths::graph::core::{Graph, Node};
 
 
 pub fn generate_graph(plane: &Vec<Vec<u8>>) -> Graph {

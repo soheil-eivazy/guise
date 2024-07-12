@@ -16,7 +16,7 @@ mod tests {
 
     #[test]
     fn it_works() {
-        let mut maze = maze_runner::maze::Maze::new(10, 10, maths::graph::GraphSearchMethod::BreadthFirst);
+        let mut maze = maze_runner::maze::Maze::new(10, 10, maze_runner::maze::GraphSearchMethod::BreadthFirst);
     
         let mut done = false;
         while !done {

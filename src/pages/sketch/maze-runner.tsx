@@ -1,5 +1,5 @@
 import dynamic from 'next/dynamic'
-import { Maze, GraphSearchMethod } from "../../../pkg"
+import { Maze, GraphSearchMethod } from "@/workshop/sketches"
 // import { memory } from "sketches/sketches_bg.wasm"
 import p5Types from "p5"
 // import { useContext } from "react"
@@ -29,8 +29,8 @@ const mazeRunner = () => {
 		size = size - (size % 100)
 		p5.createCanvas(size, size).parent(canvasParentRef)
 
-		mazeWidth = 200
-		mazeHeight = 200
+		mazeWidth = 100
+		mazeHeight = 100
 		cellWidth = size / mazeWidth
 		cellHeight = size / mazeHeight
 

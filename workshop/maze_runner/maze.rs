@@ -1,6 +1,14 @@
  use wasm_bindgen::prelude::*;
-use crate::maths::graph::{Node, GraphSearchMethod, SearchResult, BreadthFirst, Graph, GraphSearch};
+use crate::maths::graph::core::{Node, SearchResult, Graph, GraphSearch};
+use crate::maths::graph::breadth_fist::BreadthFirst;
 use super::{plane::generate_graph, generator::division};
+
+#[wasm_bindgen]
+pub enum GraphSearchMethod {
+    BreadthFirst,
+    DepthFirst,
+    AStar,
+}
 
 #[wasm_bindgen]
 pub struct Maze {
