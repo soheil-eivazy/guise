@@ -1,12 +1,15 @@
 import IntroSketch from "../components/Sketches/Intro/Intro"
-
+import P5Sketch from "@/components/Sketches/Intro2"
 
 
 export default function Home() {
   return (
     <div className="bg-primary w-screen h-screen font-Josefin">
-      <div className="w-screen h-screen flex justify-center items-center intro-sketch ">
+      {/* <div className="w-screen h-screen flex justify-center items-center intro-sketch ">
         <IntroSketch />
+      </div> */}
+      <div className="w-screen h-screen flex justify-center items-center intro-2-sketch ">
+        <P5Sketch />
       </div>
     </div>
   )
